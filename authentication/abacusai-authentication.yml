@@ -1,0 +1,26 @@
+generated: '2026-07-17'
+method: searched
+source: https://abacus.ai/help/python-sdk/getting-started
+docs: https://abacus.ai/help/python-sdk/getting-started
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - client
+  oauth2_flows: []
+  notes: Authentication is via an API key generated from the Abacus.AI user profile
+    (https://abacus.ai/app/profile/apikey). The key is supplied to the first-party
+    Python client at construction time (ApiClient(api_key)); the SDK manages the API
+    key transport to the REST API internally. No OAuth2 / OpenID Connect flow is documented
+    for the platform REST API.
+schemes:
+- name: ApiKey
+  type: apiKey
+  in: client
+  description: API key generated at https://abacus.ai/app/profile/apikey and passed
+    to the ApiClient (Python client) or sent to the REST API. Within Abacus.AI hosted
+    Notebooks the client initializes without an explicit key.
+  key_management: https://abacus.ai/app/profile/apikey
+  sources:
+  - https://abacus.ai/help/python-sdk/getting-started
+  - https://github.com/abacusai/api-python
