@@ -1,25 +1,125 @@
 aid: abacusai
 name: Abacus.ai
-description: 'Abacus.ai is a company surfaced as a portfolio company of index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Abacus.AI is a San Francisco-based artificial intelligence platform that
+  positions itself as an end-to-end AI system for professionals and enterprises. Its
+  ChatLLM product gives individuals and small teams a single interface to more than
+  100 AI models (GPT, Claude, Gemini and others) plus AI agents and app building,
+  while the Abacus.AI Enterprise platform delivers enterprise generative AI, structured
+  machine learning (predictive modeling, forecasting, personalization) and optimization.
+  Developers integrate the platform through a documented REST API and a first-party
+  Python client library (the abacusai PyPI package), authenticating with an API key.
+  This profile is maintained by the API Evangelist network and enriched from Abacus.AI''s
+  public developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/abacusai/refs/heads/main/apis.yml
 x-type: company
 x-source: index-ventures-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://abacus.ai/favicon.ico
 tags:
 - Company
 - Ai Ml
-apis: []
+- Artificial Intelligence
+- Machine Learning
+- Generative AI
+- LLM
+- AI Agents
+- MLOps
+- Enterprise AI
+- Data Science
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Abacus.AI API
+  description: The Abacus.AI REST API and first-party Python client library for building
+    generative AI, agent, and structured ML applications on the Abacus.AI platform.
+    Authentication is via an API key generated from the user profile.
+  humanURL: https://abacus.ai/help/api/
+  baseURL: https://api.abacus.ai
+  tags:
+  - Artificial Intelligence
+  - Machine Learning
+  - Generative AI
+  properties:
+  - type: APIReference
+    url: https://abacus.ai/help/api/
+  - type: GettingStarted
+    url: https://abacus.ai/help/python-sdk/getting-started
+  - type: Documentation
+    url: https://abacusai.github.io/api-python/autoapi/abacusai/index.html
+  - type: Authentication
+    url: authentication/abacusai-authentication.yml
+  - type: SDKs
+    url: packages/abacusai-packages.yml
+  - type: Packages
+    url: packages/abacusai-packages.yml
 common:
 - type: Website
   url: https://abacus.ai/
+- type: DeveloperPortal
+  url: https://abacus.ai/help/developer-platform/introduction
+- type: Documentation
+  url: https://abacus.ai/help/
+- type: APIReference
+  url: https://abacus.ai/help/api/
+- type: GettingStarted
+  url: https://abacus.ai/help/python-sdk/getting-started
+- type: Blog
+  url: https://blog.abacus.ai/
+- type: GitHubOrganization
+  url: https://github.com/abacusai
+- type: Support
+  url: https://abacus.ai/help/
+- type: Pricing
+  url: https://abacus.ai/pricing
+- type: SignUp
+  url: https://apps.abacus.ai/chatllm/?isSignUp=1
+- type: Login
+  url: https://apps.abacus.ai/chatllm/
+- type: TermsOfService
+  url: https://abacus.ai/terms
+- type: PrivacyPolicy
+  url: https://abacus.ai/privacy
+- type: Authentication
+  url: authentication/abacusai-authentication.yml
+- type: Packages
+  url: packages/abacusai-packages.yml
+- type: SDKs
+  url: packages/abacusai-packages.yml
+- type: DomainSecurity
+  url: security/abacusai-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/abacusai-vulnerability-disclosure.yml
+- type: Security
+  url: https://abacus.ai/security
+- type: TrustCenter
+  url: security/abacusai-trust-center.yml
+- type: Compliance
+  url: https://abacus.ai/security
+- type: Conformance
+  url: conformance/abacusai-conformance.yml
+- type: LLMsTxt
+  url: llms/abacusai-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
