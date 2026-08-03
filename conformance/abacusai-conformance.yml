@@ -1,0 +1,32 @@
+generated: '2026-07-17'
+method: searched
+source: https://abacus.ai/security
+standards:
+- id: soc2-type-ii
+  name: SOC 2 Type II
+  conforms: true
+  evidence: Listed on the Abacus.AI security page as Security, availability, and confidentiality
+    controls.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: true
+  evidence: Listed on the Abacus.AI security page as its information security management
+    system standard.
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  evidence: Listed on the Abacus.AI security page (safeguards for protected health
+    information).
+- id: gdpr
+  name: GDPR
+  conforms: true
+  evidence: Listed on the Abacus.AI security page; Data Protection Addendum published
+    at https://static.abacus.ai/security/Abacus_dpa.pdf.
+- id: ccpa
+  name: CCPA
+  conforms: true
+  evidence: Listed on the Abacus.AI security page (California Consumer Privacy Act).
+- id: oauth2
+  conforms: false
+  evidence: No OAuth2 flow documented; the platform API authenticates with an API
+    key.

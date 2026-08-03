@@ -1,0 +1,16 @@
+generated: '2026-07-17'
+method: searched
+source: https://pypi.org/project/abacusai/
+packages:
+- language: python
+  registry: pypi
+  name: abacusai
+  url: https://pypi.org/project/abacusai/
+  install: pip install abacusai
+  repository: https://github.com/abacusai/api-python
+  docs: https://abacusai.github.io/api-python/autoapi/abacusai/index.html
+  license: MIT
+  official: true
+  description: The official Abacus.AI Python client library. Provides the ApiClient
+    class for authenticating with an API key and calling the Abacus.AI REST API to
+    build generative AI, agent, and structured ML applications. Supports Python 3.8+.

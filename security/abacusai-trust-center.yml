@@ -1,0 +1,18 @@
+generated: '2026-07-17'
+method: searched
+probe: true
+source: https://abacus.ai/security
+url: https://abacus.ai/security
+certifications:
+- SOC 2
+- ISO 27001
+- HIPAA
+- GDPR
+evidence:
+- source: https://abacus.ai/security
+  keywords:
+  - soc 2
+  - soc2
+  - iso/iec 27001
+  - hipaa
+  - gdpr
