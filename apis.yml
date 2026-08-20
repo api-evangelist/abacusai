@@ -35,6 +35,17 @@ tags:
 - Company
 - Ai Ml
 - Artificial Intelligence
+- Machine-Learning
+- Generative AI
+- LLM
+- AI Agents
+- MLOps
+- Enterprise AI
+- Data Science
+tags_raw:
+- Company
+- Ai Ml
+- Artificial Intelligence
 - Machine Learning
 - Generative AI
 - LLM
@@ -55,6 +66,10 @@ apis:
   humanURL: https://abacus.ai/help/api/
   baseURL: https://api.abacus.ai
   tags:
+  - Artificial Intelligence
+  - Machine-Learning
+  - Generative AI
+  tags_raw:
   - Artificial Intelligence
   - Machine Learning
   - Generative AI
