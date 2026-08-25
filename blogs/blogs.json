@@ -10,12 +10,12 @@
     },
     {
       "source": "https://abacus.ai/help/python-sdk/getting-started",
-      "feed_url": "https://abacus.ai/help/platform-updates/rss.xml",
+      "feed_url": "https://abacus.ai/help/python-sdk/getting-started",
       "title": "",
       "saved": 0,
-      "method": "discovered"
+      "method": "none"
     }
   ],
   "post_count": 9,
-  "fetched": "2026-08-15T12:22:01Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
