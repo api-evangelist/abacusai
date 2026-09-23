@@ -1,0 +1,36 @@
+# Front Door AI Index — abacusai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: abacusai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: abacus.ai
+  final_host: abacus.ai
+  ownership: own
+  owner: abacusai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 579
+  host_score: 579
+  density: 89.78
+  words: 6449
+  tiers:
+    agentic: 230
+    core: 335
+    model: 14
+  ambiguous: 252
+  top_terms:
+    AI: 322
+    agent: 230
+    AI agent: 183
+    chatbot: 23
+    GPT: 11
+    prompts: 10
+    intelligence: 7
+    MCP: 6
+    smart: 6
+    automation: 5
+    gen ai: 5
+    RAG: 4
