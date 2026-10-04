@@ -47,7 +47,7 @@ tags:
 - Company
 - Ai Ml
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Generative AI
 - LLM
 - AI Agents
@@ -65,6 +65,7 @@ tags_raw:
 - MLOps
 - Enterprise AI
 - Data Science
+- Machine-Learning
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -79,12 +80,13 @@ apis:
   baseURL: https://api.abacus.ai
   tags:
   - Artificial Intelligence
-  - Machine-Learning
+  - Machine Learning
   - Generative AI
   tags_raw:
   - Artificial Intelligence
   - Machine Learning
   - Generative AI
+  - Machine-Learning
   properties:
   - type: APIReference
     url: https://abacus.ai/help/api/
