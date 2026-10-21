@@ -12,6 +12,7 @@ checked:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 - slack/integrations/slack-integration-edges.yml
 - zoom/integrations/zoom-integration-edges.yml
+- eclipse/integrations/eclipse-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -29,6 +30,36 @@ edges:
   seller_name: Abacus.Ai Inc.
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: PyPI
+  partner: pypi
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Python)
+  evidence: https://pypi.org/project/abacusai/
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: abacusai
+      version: 1.4.117
+      released: '2026-10-12'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/abacusai/
+      repo_leg: github-org:abacusai
+      publisher_leg: email:abacus.ai
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 - partner_name: Microsoft Teams (own)
   partner: microsoft-teams
   partner_match: mirror
@@ -82,36 +113,25 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Zoom app
-- partner_name: PyPI
-  partner: pypi
-  partner_match: register
-  type: register
-  direction: provider-built
-  category: official SDK (Python)
-  evidence: https://pypi.org/project/abacusai/
-  channel: package-registry
-  relationship: distribution-channel
-  contract_reference:
-    register: PyPI (public registry JSON)
-    spec_file: null
-    language: Python
-    packages:
-    - name: abacusai
-      version: 1.4.117
-      released: '2026-10-12'
-      released_field: upload_time
-      lapsed: false
-      page: https://pypi.org/project/abacusai/
-      repo_leg: github-org:abacusai
-      publisher_leg: email:abacus.ai
-      matched_by: domain
-    current: true
-    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
-      24 months'
-    detected_by: sweep-official-sdks.py
-    detected: '2026-10-18'
-  detected_by: sweep-official-sdks.py
-  first_seen: '2026-10-18'
+- partner_name: Eclipse Foundation (open-vsx)
+  partner: eclipse
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: open-vsx
+  evidence: https://open-vsx.org/namespace/abacusai
+  mirror_of: eclipse/integrations/eclipse-integration-edges.yml
+  apps:
+  - 'Abacus AI Agent: AI Coding Agent for Any Model'
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: IDE / developer extension marketplace listing
+  badges:
+  - Verified namespace
 source:
 - microsoft-teams/integrations/microsoft-teams-integration-edges.yml
 - slack/integrations/slack-integration-edges.yml
